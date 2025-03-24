@@ -1,0 +1,175 @@
+ .client-section {
+     background-position: right bottom;
+     background-repeat: no-repeat;
+
+     @include respond-to("xxl") {
+         background-size: 50%;
+     }
+
+     @include respond-to("md") {
+         background-size: 70%;
+     }
+
+     @include respond-to("sm") {
+         background-size: 100%;
+     }
+
+     .client-one {
+         background-color: $theme-colour;
+         padding: 20px;
+         display: flex;
+         align-items: center;
+         width: 47%;
+         position: relative;
+         transform: translateY(-40px);
+         margin-bottom: -40px;
+
+         @include respond-to("xxl") {
+             width: 55%;
+         }
+
+         @include respond-to("xl") {
+             width: 65%;
+         }
+
+         @include respond-to("md") {
+             width: 80%;
+             padding: 10px;
+         }
+
+         @include respond-to("sm") {
+             width: 100%;
+         }
+
+         img {
+             border-radius: 50%;
+             margin-right: 20px;
+
+             @include respond-to("md") {
+                 width: 70px;
+                 height: auto;
+                 margin-bottom: 0;
+             }
+         }
+
+         h5 {
+             font-weight: 600;
+             padding-bottom: 10px;
+             font-size: 24px;
+             color: $white-colour;
+
+             @include respond-to("md") {
+                 font-size: 20px;
+             }
+         }
+
+         >i {
+             font-size: 70px;
+             position: absolute;
+             right: 0;
+             top: -8px;
+             color: $white-colour;
+
+             @include respond-to("md") {
+                 font-size: 50px;
+             }
+         }
+
+         h6 {
+             line-height: 26px;
+             color: $white-colour;
+
+             @include respond-to("md") {
+                 font-size: 14px;
+             }
+         }
+     }
+
+     .client-text {
+         h5 {
+             font-size: 36px;
+             line-height: 55px;
+             padding: 51px;
+             background-color: #fff;
+             width: 100%;
+             padding-bottom: 80px;
+             font-weight: 600;
+
+             @include respond-to("xxl") {
+                 font-size: 28px;
+                 line-height: 42px;
+             }
+
+             @include respond-to("xl") {
+                 font-size: 26px;
+                 width: 100%;
+                 padding-top: 10px;
+             }
+
+             @include respond-to("md") {
+                 font-size: 20px;
+                 width: 100%;
+                 padding-top: 20px;
+                 line-height: 38px;
+             }
+
+             @include respond-to("sm") {
+                 width: 100%;
+                 padding-top: 20px;
+                 padding: 30px;
+                 padding-bottom: 70px;
+             }
+         }
+     }
+
+     img {
+         border-radius: 50%;
+         border: 3px solid #fff;
+         margin-right: 10px;
+
+         @include respond-to("xxl") {
+             margin-right: 0px;
+         }
+
+         @include respond-to("md") {
+             margin-right: 10px;
+             margin-bottom: 10px;
+         }
+
+     }
+
+     @at-root {
+         ul.star {
+             display: flex;
+             padding-top: 36px;
+             padding-left: 10px;
+
+             @include respond-to("md") {
+                 padding-top: 18px;
+                 padding-left: 10px;
+             }
+
+             i {
+                 font-size: 12px;
+                 padding-left: 3px;
+                 color: #fff10e;
+             }
+         }
+     }
+ }
+
+ .client-slider {
+     padding-bottom: 60px;
+
+     .swiper-pagination {
+         width: auto;
+     }
+
+     .swiper-pagination .swiper-pagination-bullet {
+         background-color: #444;
+     }
+
+     .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+         background-color: $theme-colour !important;
+     }
+ }

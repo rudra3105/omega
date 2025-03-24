@@ -1,0 +1,67 @@
+.concept-design {
+    width: 92%;
+
+    @include respond-to("xxl") {
+        width: 97%;
+    }
+
+    @include respond-to("lg") {
+        margin-bottom: 40px;
+    }
+
+    figure {
+        img {
+            width: 100%;
+        }
+
+        width: 85%;
+    }
+
+    span {
+        font-size: 30px;
+        font-weight: 800;
+        color: $theme-colour;
+
+        @include respond-to("xxl") {
+            font-size: 20px;
+            margin-right: 14px;
+        }
+    }
+
+    h4 {
+        padding-top: 15px;
+        line-height: 40px;
+        font-size: 28px;
+        font-weight: bold;
+        border-bottom: 3px solid #cdcdcd;
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+        position: relative;
+
+        @include respond-to("xxl") {
+            font-size: 24px;
+        }
+
+        @include respond-to("sm") {
+            font-size: 22px;
+        }
+
+        &::before {
+            @include content(1);
+            background-color: $theme-colour;
+            width: 0%;
+            height: 3px;
+            top: auto;
+            bottom: -3px;
+            @include transition;
+        }
+    }
+
+    &:hover {
+        h4 {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}

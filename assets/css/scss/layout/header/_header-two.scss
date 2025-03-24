@@ -1,0 +1,52 @@
+header.two {
+    &:before {
+        right: 13%;
+        content: "";
+        position: absolute;
+        width: 60%;
+        height: 90px;
+        background-color: #fff;
+        display: block;
+        bottom: 0;
+
+        @include respond-to("xxl") {
+            right: 7.5%;
+            width: 70%;
+            height: 75px;
+        }
+
+        @include respond-to("xl") {
+            display: none;
+        }
+    }
+
+    .header-top-bar {
+        padding-top: 14px;
+        padding-bottom: 24px;
+
+        @include respond-to("xxl") {
+            padding-bottom: 14px;
+        }
+    }
+
+    .bottom-bar {
+        padding-bottom: 10px;
+    }
+
+    .navbar-links li>a {
+        color: #000;
+        font-weight: 600;
+    }
+
+    li.menu-item-children>a:before {
+        filter: invert(0);
+    }
+
+    .header-search {
+        z-index: 11;
+
+        i {
+            color: #000;
+        }
+    }
+}

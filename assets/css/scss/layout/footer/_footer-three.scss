@@ -1,0 +1,234 @@
+footer.three {
+    &::before {
+        opacity: 0;
+    }
+
+    .logo-heading {
+        p {
+            font-size: 25px;
+            line-height: 35px;
+            color: #dcdcdc;
+            width: 94%;
+            font-weight: 700;
+
+            @include respond-to("xxl") {
+                font-size: 22px;
+                line-height: 35px;
+                width: 98%;
+            }
+
+            @include respond-to("xl") {
+                font-size: 18px;
+                line-height: 30px;
+                color: #dcdcdc;
+                width: 94%;
+            }
+
+            @include respond-to("xl") {
+                font-size: 18px;
+                width: 100%;
+                padding-top: 40px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    .location+.location {
+        padding-top: 30px;
+
+        @include respond-to("mdd") {
+            padding-bottom: 0px;
+        }
+    }
+
+    .location {
+        padding-bottom: 30px;
+
+        &:hover {
+            i {
+                background-color: #fe782d;
+                color: #fff;
+            }
+        }
+    }
+
+    .location {
+        display: flex;
+        border-bottom: 1px solid #636363;
+        padding-bottom: 20px;
+        width: 90%;
+
+        a {
+            font-size: 18px;
+            @include text-hover;
+            @include transition;
+            background-image: linear-gradient(to right, $theme-colour, $theme-colour 50%, #c3c3c3 50%);
+
+            @include respond-to("xl") {
+                font-size: 16px;
+                padding-top: 10px;
+            }
+
+            &:hover {
+                background-position: 0;
+            }
+        }
+
+        p {
+            color: #c3c3c3;
+
+            @include respond-to("xl") {
+                font-size: 14px;
+            }
+        }
+
+        i {
+            color: #c3c3c3;
+            font-size: 26px;
+            margin-right: 21px;
+            transform: translateY(6px);
+            @include transition;
+
+            @include respond-to("xl") {
+                font-size: 19px;
+                margin-right: 14px;
+                line-height: 24px;
+            }
+        }
+
+    }
+
+    .location+.location {
+        border: 0;
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .footer-boder {
+        margin-bottom: 90px;
+
+        @include respond-to("lg") {
+            margin-bottom: 0;
+        }
+    }
+
+    .f-bottom {
+        margin-top: 50px;
+
+        @include respond-to("lg") {
+            margin-top: 40px;
+        }
+    }
+
+
+    .footer-contact {
+        position: relative;
+
+        @include respond-to("lg") {
+            margin-top: 40px;
+        }
+
+        >a {
+            color: #dcdcdc;
+            display: block;
+            padding-bottom: 10px;
+            font-size: 18px;
+            @include transition;
+
+            &:hover {
+                color: $theme-colour;
+                background-position: 0%;
+            }
+
+            span {
+                color: $theme-colour;
+                padding-right: 10px;
+            }
+        }
+
+        h3 {
+            font-weight: 700;
+            color: #fff;
+            font-size: 22px;
+            padding-bottom: 8px;
+            margin-bottom: 30px;
+            position: relative;
+
+            @include respond-to("xxl") {
+                font-size: 20px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: $theme-colour;
+                width: 60px;
+                height: 3px;
+                bottom: -3px;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .swiper-pagination {
+            text-align: left;
+        }
+    }
+
+    .location {
+        h6 {
+            color: #fff;
+            font-size: 18px;
+            padding-bottom: 8px;
+        }
+
+        i {
+            @include flexcenter;
+            border: 1px solid $theme-colour;
+            color: $theme-colour;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+
+    @at-root {
+        .footer-social-media {
+            a {
+                color: #ffffff;
+                display: block;
+                padding-bottom: 12px;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                @include transition;
+
+                @include respond-to("mdd") {
+                    padding-bottom: 10px;
+                }
+
+                i {
+                    width: 34px;
+                    height: 34px;
+                    background-color: #ffffff36;
+                    @include flexcenter;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                    color: #fff;
+                    @include transition;
+                }
+
+                &:hover {
+                    color: $theme-colour;
+
+                    i {
+                        background-color: $theme-colour;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

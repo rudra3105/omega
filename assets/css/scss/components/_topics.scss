@@ -1,0 +1,103 @@
+.trending-topics {
+    position: relative;
+    background-size: cover;
+
+    &::before {
+        @include content(.8);
+        background-color: $drak-color;
+    }
+
+    .heading {
+        h2 {
+            color: $white-colour;
+        }
+
+        span {
+            color: #d1d1d1;
+        }
+    }
+}
+
+.topics {
+    padding: 40px;
+    position: relative;
+    @include transition;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .6s all;
+
+    &.topics::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.7;
+        content: "";
+        left: 0;
+        top: 0;
+    }
+
+    @include respond-to("xxl") {
+        padding: 30px;
+    }
+
+    @include respond-to("lg") {
+        margin-bottom: 23px;
+    }
+
+    p {
+        color: $white-colour;
+        position: relative;
+        opacity: 0;
+        @include transition;
+        transform: translateX(15px);
+    }
+
+    a {
+        position: relative;
+        color: $theme-colour;
+        padding-top: 22px;
+        display: block;
+        text-transform: capitalize;
+        opacity: 0;
+        @include transition;
+        transform: translatey(15px);
+
+        i {
+            padding-left: 10px;
+        }
+    }
+
+    h4 {
+        letter-spacing: 1px;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding-bottom: 320px;
+        font-size: 26px;
+        font-weight: 800;
+        position: relative;
+
+        @include respond-to("xxl") {
+            font-size: 20px;
+            letter-spacing: 0px;
+        }
+    }
+
+    &:hover {
+
+        background-position: right top;
+
+        a {
+            transform: translatey(0px);
+        }
+
+        p {
+            transform: translateX(0px);
+        }
+
+        a,
+        p {
+            opacity: 1;
+        }
+    }
+}

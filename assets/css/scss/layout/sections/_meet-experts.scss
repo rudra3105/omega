@@ -1,0 +1,77 @@
+.meet-experts {
+    position: relative;
+    z-index: 11;
+    width: 85%;
+    margin-left: auto;
+
+    @include respond-to("lg") {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    textarea {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+    input {
+        margin-bottom: 18px;
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: #fff;
+
+        &::placeholder {
+            color: #fff;
+        }
+
+        @include respond-to("mdd") {
+            margin-bottom: 10px;
+        }
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 800;
+        color: $white-colour;
+        padding-bottom: 4px;
+
+        @include respond-to("xxl") {
+            font-size: 38px;
+        }
+    }
+
+    p {
+        padding-bottom: 20px;
+        color: $white-colour;
+    }
+
+    textarea {
+        height: 130px;
+        padding-left: 30px;
+        margin-bottom: 14px;
+    }
+
+    .theme-btn.hvr-light {
+        width: 100%;
+        padding: 17px;
+        background-color: $drak-color;
+        color: $white-colour;
+
+        &::before {
+            background-color: $white-colour;
+        }
+
+        &::after {
+            background-color: $theme-colour;
+        }
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
