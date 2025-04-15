@@ -1062,19 +1062,19 @@ Hero Slider Area Style
 }
 
 .hero-slider-item.bg-1 {
-    background-image: url(../img/hero-slider-img/hero-slider-img-1.jpg);
+    background-image: url(../img/H1.jpg);
 }
 
 .hero-slider-item.bg-2 {
-    background-image: url(../img/hero-slider-img/hero-slider-img-2.jpg);
+    background-image: url(../img/H2.jpg);
 }
 
 .hero-slider-item.bg-3 {
-    background-image: url(../img/hero-slider-img/hero-slider-img-3.jpg);
+    background-image: url(../img/H3.jpg);
 }
 
 .hero-slider-item.bg-4 {
-    background-image: url(../img/hero-slider-img/hero-slider-img-4.jpg);
+    background-image: url(../img/H1.jpg);
 }
 
 .hero-slider-item::before {
