@@ -34,6 +34,9 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
     <!-- Title -->
     <title>Omega Construction Group</title>
 </head>
@@ -42,7 +45,7 @@
     <!-- Start Preloader Area -->
     <div class="loader-wrapper">
         <div class="loader-logo">
-            <img src="assets/img/logo.jpg" alt="Loading..." />
+            <img src="assets/img/footer-logo.png" alt="Loading..." />
         </div>
     </div>
     
@@ -50,7 +53,7 @@
     .loader-wrapper {
         position: fixed;
         z-index: 9999;
-        background: #fff;
+        background: #000 !important;
         width: 100%;
         height: 100%;
         top: 0;
@@ -61,7 +64,7 @@
     }
     
     .loader-logo img {
-        width: 150px;
+        width: 200px;
         animation: pulse 1.5s infinite ease-in-out;
     }
     
@@ -77,7 +80,7 @@
     <!-- Start Header Area -->
     <header class="header-area">
         <!-- Start Top Header -->
-        <div class="top-header">
+        <div class="top-header black-bg">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-sm-8 ps-0">
@@ -142,7 +145,7 @@
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md">
                         <a class="navbar-brand" href="index.html">
-								<img alt="Logo" data-cfsrc="assets/img/logo.jpg" style="width:150px"><noscript><img src="assets/img/logo.jpg" alt="Logo"></noscript>
+								<img alt="Logo" data-cfsrc="assets/img/logo.jpg" style="width:200px"><noscript><img src="assets/img/logo.jpg" alt="Logo"></noscript>
 							</a>
 
                         <div class="collapse navbar-collapse mean-menu">
@@ -402,57 +405,55 @@
     <section class="counter-area pb-70">
         <div class="container">
             <div class="row">
+                <!-- Years of Experience -->
                 <div class="col-lg-3 col-sm-6">
-                    <div class="single-counter">
-                        <i class="flaticon-experience"></i>
-
+                    <div class="single-counter ">
+                        <i class="fas fa-briefcase fa-sm"></i>
                         <h2>
                             <span class="odometer" data-count="15">00</span>
                             <span class="target">+</span>
                         </h2>
-
-                        <h3>Years of experience</h3>
+                        <h3>Years of Experience</h3>
                     </div>
                 </div>
-
+    
+                <!-- Material Guarantee -->
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-counter">
-                        <i class="flaticon-customer-review"></i>
-
+                        <i class="fas fa-shield-alt fa-sm"></i>
                         <h2>
                             <span class="odometer" data-count="1.25">00</span>
                         </h2>
-
-                        <h3>Years Material Gaurantee </h3>
+                        <h3>Years Material Guarantee</h3>
                     </div>
                 </div>
-
+    
+                <!-- Complete Projects -->
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-counter">
-                        <i class="flaticon-complete"></i>
-
+                        <i class="fas fa-check-circle fa-sm"></i>
                         <h2>
                             <span class="odometer" data-count="99">00</span>
                         </h2>
-
-                        <h3>Complete projects</h3>
+                        <h3>Complete Projects</h3>
                     </div>
                 </div>
-
+    
+                <!-- Workmanship Guarantee -->
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-counter">
-                        <i class="flaticon-trophy"></i>
-
+                        <i class="fas fa-award fa-sm"></i>
                         <h2>
                             <span class="odometer" data-count="2.7">00</span>
                         </h2>
-
                         <h3>Years Workmanship Guarantee</h3>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    
     <!-- End Counter Area -->
 
     <!-- Start Featured Area -->
